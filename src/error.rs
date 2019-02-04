@@ -1,14 +1,8 @@
-use std::fmt::{
-    Display,
-    Formatter,
-    Result as FmtResult,
-};
+use crate::consts::msg;
+use derive_more::*;
 
-#[derive(Debug)]
-pub enum Error {}
-
-impl Display for Error {
-    fn fmt(&self, _f: &mut Formatter) -> FmtResult {
-        unimplemented!();
-    }
+#[derive(Debug, Display, From, PartialEq)]
+pub enum Error {
+    #[display(fmt = "{}: {:?}", "msg::ERR_SAMPLE", "_0")]
+    SampleError(std::num::ParseIntError),
 }

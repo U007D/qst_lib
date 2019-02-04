@@ -110,4 +110,7 @@ Cargo.lock
 # Ignore all local history of files
 .history
 
+### cargo-generate ###
+**/.cargo-ok
+
 # End of https://www.gitignore.io/api/rust,clion,intellij,visualstudiocode

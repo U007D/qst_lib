@@ -5,6 +5,7 @@ authors = ["{{authors}}"]
 edition = "2018"
 
 [dependencies]
+derive_more = "*"
 
 [profile.dev]
 codegen-units = 1
