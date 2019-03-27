@@ -1,4 +1,4 @@
-#![warn(clippy::all, clippy::nursery, clippy::pedantic, clippy::cargo)]
+#![warn(clippy::all, clippy::nursery, clippy::pedantic)]
 #![forbid(overflowing_literals)]
 // To use `unsafe` keyword, change to `#![allow(unsafe_code)]` (do not remove); aids auditing.
 #![forbid(unsafe_code)]

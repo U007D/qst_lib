@@ -1,1 +1,3 @@
-pub mod msg;
+mod en_us;
+
+pub use en_us::*;
