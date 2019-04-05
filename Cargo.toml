@@ -1,16 +1,19 @@
 [package]
-name = "{{project-name}}"
-version = "0.1.0"
 authors = ["{{authors}}"]
-edition = "2018"
-license = "MIT OR Apache-2.0"
-repository = "https://github.com/u007d/{{project-name}}"
-readme = "README.md"
-keywords = []
 categories = []
+edition = "2018"
+keywords = []
+license = "MIT or Apache-2.0"
+name = "{{project-name}}"
+readme = "README.md"
+repository = "https://github.com/u007d/{{project-name}}"
+version = "0.1.0"
 
 [dependencies]
 derive_more = "*"
+
+[dev-dependencies]
+pretty_assertions = "*"
 
 [profile.dev]
 codegen-units = 1
