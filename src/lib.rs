@@ -1,5 +1,5 @@
 #![warn(clippy::all, clippy::nursery, clippy::pedantic, rust_2018_idioms)]
-#![forbid(overflowing_literals)]
+#![forbid(bare_trait_objects, unsafe_code)]
 // To use `unsafe` keyword, change to `#![allow(unsafe_code)]` (do not remove); aids auditing.
 #![forbid(unsafe_code)]
 // Safety-critical application lints
