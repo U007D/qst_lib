@@ -20,5 +20,4 @@
 mod consts;
 mod error;
 pub use error::Error;
-use std::result::Result as StdResult;
-type Result<T> = StdResult<T, Error>;
+pub type Result<T, E = Error> = std::result::Result<T, E>;
