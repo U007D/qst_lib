@@ -18,6 +18,7 @@ enum InnerError {
 }
 
 #[derive(Clone, Copy, Debug, Eq, Hash, PartialEq)]
+#[allow(clippy::pedantic)]
 pub enum ErrorKind {
     GeneralErrorCategory1,
 }
