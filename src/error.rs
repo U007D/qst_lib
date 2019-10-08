@@ -1,7 +1,7 @@
 use snafu::Snafu;
 
 #[derive(Debug, Snafu)]
-pub struct Error(InnerError);
+pub struct Error(pub(crate) InnerError);
 
 impl Error {
     #[cfg(feature = "const_fn")]
@@ -22,9 +22,9 @@ impl Error {
 }
 
 #[derive(Debug, Snafu)]
-enum InnerError {
+pub(crate) enum InnerError {
     #[snafu(display("{}: {:?}", "msg::ERR_SAMPLE", "source"))]
-    SampleError { source: std::num::ParseIntError, },
+    SampleError { source: std::num::ParseIntError },
 }
 
 #[derive(Clone, Copy, Debug, Eq, Hash, PartialEq)]
