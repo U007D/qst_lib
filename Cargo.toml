@@ -10,7 +10,7 @@ repository = "https://github.com/u007d/{{project-name}}"
 version = "0.1.0"
 
 [dependencies]
-snafu = "*"
+thiserror = "*"
 
 [profile.dev]
 codegen-units = 1
