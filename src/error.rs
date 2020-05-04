@@ -2,4 +2,7 @@ use crate::consts::msg;
 use thiserror::Error;
 
 #[derive(Debug, Error, PartialEq)]
-pub enum Error {}
+pub enum Error {
+    #[error("{}", msg::SAMPLE_ERROR)]
+    SampleError,
+}
