@@ -10,7 +10,11 @@ repository = "https://github.com/u007d/{{project-name}}"
 version = "0.1.0"
 
 [dependencies]
-thiserror = "*"
+thiserror = "1"
+
+[dev-dependencies]
+assert2 = "*"
+
 
 [profile.dev]
 codegen-units = 1
