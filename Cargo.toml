@@ -1,20 +1,20 @@
 [package]
 authors = ["{{authors}}"]
 categories = []
+description = "<describe crate here>"
 edition = "2018"
 keywords = []
-license = "MIT or Apache-2.0"
+license = "MIT OR Apache-2.0"
 name = "{{project-name}}"
 readme = "README.md"
 repository = "https://github.com/u007d/{{project-name}}"
 version = "0.1.0"
 
 [dependencies]
-thiserror = "1"
+thiserror = "*"
 
 [dev-dependencies]
 assert2 = "*"
-
 
 [profile.dev]
 codegen-units = 1

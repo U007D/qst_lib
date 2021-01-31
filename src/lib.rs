@@ -14,7 +14,9 @@
     clippy::missing_errors_doc,
     clippy::module_name_repetitions
 )]
-// To use the `unsafe` keyword, change to `#![allow(unsafe_code)]` (do not remove); aids auditing.
+// To use the `unsafe` keyword, do not remove the `unsafe_code` attribute entirely.
+// Instead, change it to `#![allow(unsafe_code)]` or preferably `#![deny(unsafe_code)]` + opt-in
+// with local `#[allow(unsafe_code)]`'s on a case-by-case basis, if practical.
 #![forbid(unsafe_code)]
 #![forbid(bare_trait_objects)]
 // Uncomment before ship to reconcile use of possibly redundant crates, debug remnants, missing
