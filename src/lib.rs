@@ -12,7 +12,8 @@
     clippy::iter_nth_zero,
     clippy::match_bool,
     clippy::missing_errors_doc,
-    clippy::module_name_repetitions
+    clippy::module_name_repetitions,
+    clippy::wildcard_imports
 )]
 // To use the `unsafe` keyword, do not remove the `unsafe_code` attribute entirely.
 // Instead, change it to `#![allow(unsafe_code)]` or preferably `#![deny(unsafe_code)]` + opt-in
