@@ -8,6 +8,7 @@
     clippy::unwrap_used
 )]
 #![allow(
+    clippy::equatable_if_let,
     clippy::implicit_return,
     clippy::iter_nth_zero,
     clippy::match_bool,
