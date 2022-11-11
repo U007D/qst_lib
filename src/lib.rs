@@ -8,11 +8,13 @@
     clippy::unwrap_used
 )]
 #![allow(
+    clippy::equatable_if_let,
     clippy::implicit_return,
     clippy::iter_nth_zero,
     clippy::match_bool,
     clippy::missing_errors_doc,
     clippy::module_name_repetitions,
+    clippy::similar_names,
     clippy::wildcard_imports
 )]
 // To use the `unsafe` keyword, do not remove the `unsafe_code` attribute entirely.
