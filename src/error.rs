@@ -11,10 +11,3 @@ pub enum Error {
     #[error("{}: {:?}: ", msg::ERR_IO, 0)]
     IoError(#[from] io::Error),
 }
-
-
-impl From<std::ffi::OsString> for Error {
-    fn from(oss: std::ffi::OsString) -> Self {
-        arg::Error::from(oss).into()
-    }
-}
