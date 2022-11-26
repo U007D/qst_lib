@@ -21,6 +21,12 @@ impl Display for Error {
     }
 }
 
+impl From<std::io::Error> for Error {
+    fn from(err: std::io::Error) -> Self {
+        Self(err)
+    }
+}
+
 impl PartialEq for Error {
     fn eq(&self, rhs: &Self) -> bool {
         self.0.kind() == rhs.0.kind()

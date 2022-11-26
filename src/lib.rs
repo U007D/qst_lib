@@ -1,4 +1,3 @@
-#![warn(clippy::all, clippy::nursery, clippy::pedantic, rust_2018_idioms)]
 // Safety-critical application lints
 #![deny(
     clippy::pedantic,
@@ -7,6 +6,7 @@
     clippy::integer_arithmetic,
     clippy::unwrap_used
 )]
+#![warn(clippy::all, clippy::nursery, clippy::pedantic, rust_2018_idioms)]
 #![allow(
     clippy::equatable_if_let,
     clippy::implicit_return,
@@ -28,6 +28,7 @@
 // #![warn(clippy::cargo, clippy::restriction, missing_docs, warnings)]
 // #![allow(clippy::implicit_return)]
 
-mod consts;
 mod error;
+mod shared_consts;
+
 pub use error::{Error, Result};
