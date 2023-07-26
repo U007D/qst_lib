@@ -1,9 +1,9 @@
 // Safety-critical application lints
 #![deny(
-    clippy::pedantic,
+    clippy::arithmetic_side_effects,
     clippy::float_cmp_const,
     clippy::indexing_slicing,
-    clippy::integer_arithmetic,
+    clippy::pedantic,
     clippy::unwrap_used
 )]
 #![warn(clippy::all, clippy::nursery, clippy::pedantic, rust_2018_idioms)]
