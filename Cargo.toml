@@ -42,3 +42,52 @@ debug-assertions = true
 lto = false
 opt-level = 0
 rpath = false
+
+[lints.rust]
+# Uncomment before ship to reconcile use of possibly redundant crates, debug remnants, missing
+# license files and more
+#blanket_clippy_restriction_lints = "allow"
+#implicit_return = "allow"
+#cargo = "warn"
+#restriction = "warn"
+
+# To use the `unsafe` keyword, do not remove the `unsafe_code = "forbid"` entry.
+# Instead, prefer to change it to `unsafe_code = "deny"` + opt-in with local use of
+# `#[allow(unsafe_code)]`'s on an as needed basis.
+unsafe_code = "deny"
+bare_trait_objects = "forbid"
+
+rust_2018_idioms = "warn"
+
+# Uncomment before ship to reconcile use of possibly redundant crates, debug remnants, missing
+# license files and more
+#missing_docs = "warn"
+#warnings = "deny"
+
+[lints.clippy]
+# Safety-critical application lints
+arithmetic_side_effects = "deny"
+float_cmp_const = "deny"
+indexing_slicing = "deny"
+pedantic = { level = "deny", priority = -1 }
+unwrap_used = "deny"
+wildcard_imports = "deny"
+
+all = { level = "warn", priority = -1 }
+nursery = { level = "warn", priority = -1 }
+# End of safety-critical application lints
+
+enum_variant_names = "allow"
+equatable_if_let = "allow"
+implicit_return = "allow"
+items-after-statements = "allow"
+iter_nth_zero = "allow"
+match_bool = "allow"
+match-same-arms = "allow"
+missing_errors_doc = "allow"
+module_name_repetitions = "allow"
+obfuscated_if_else = "allow"
+similar_names = "allow"
+unnecessary_wraps = "allow"
+enum_glob_use = "deny"
+
