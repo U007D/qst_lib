@@ -1,3 +1,4 @@
+#![allow(clippy::wildcard_imports)]
 pub mod io;
 
 use crate::shared_consts::*;
