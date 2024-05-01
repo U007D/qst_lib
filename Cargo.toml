@@ -11,7 +11,7 @@ repository = "https://github.com/u007d/{{project-name}}"
 version = "0.1.0"
 
 [dependencies]
-he_std = { git = "ssh://github/u007d/he_std.git", branch = "main" }
+he_std = { git = "ssh://git@github.com/u007d/he_std.git", branch = "main" }
 thiserror = "*"
 
 [dev-dependencies]
