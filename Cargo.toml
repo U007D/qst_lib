@@ -57,7 +57,7 @@ rpath = false
 unsafe_code = "deny"
 bare_trait_objects = "forbid"
 
-rust_2018_idioms = "warn"
+rust_2018_idioms = { level = "warn", priority = -1 }
 
 # Uncomment before ship to reconcile use of possibly redundant crates, debug remnants, missing
 # license files and more
